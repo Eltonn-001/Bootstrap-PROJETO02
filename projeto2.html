@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/projeto2.css">
+    <title>Projeto 2</title>
+</head>
+<body>
+    <div class="form-box">
+        <h1>Acesse aqui</h1>
+        <div class="input-box">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" name="" placeholder="Digite seu email">
+        </div>
+    
+        <div class="input-box">
+            <i class="fa-regular fa-key"></i>
+            <input type="password" name="" placeholder="Senha" id="myInput">
+            <span class="eye" onclick="myFunction()">
+                <i class="fa-regular fa-eye"></i>
+                <i class="fa-regular fa-eye-slash"></i>
+            </span> 
+        </div>
+    
+        <button type="button" class="login-btn">LOGIN</button>
+    </div>
+
+    <script>
+        function myFunction(){
+            var x = document.getElementById("myInput");
+            var y = document.getElementById("hide1");
+            var z = document.getElementById("hide2");
+
+            if (x.type === 'password'){
+                x.type = "text";
+                y.style.display = "block";
+                z.style.display = "none";
+            }
+            else{
+                x.type = "password";
+                y.style.display = "none";
+                z.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
